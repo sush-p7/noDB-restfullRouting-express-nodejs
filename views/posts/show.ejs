@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts</title>
-
+    <title>Post</title>
     <link rel="stylesheet" href="/app.css" />
   </head>
   <body>
+    <form action="#">
     <div class="wrapper">
-      <% for(let post of posts){ %>
-
       <div class="card">
         <div class="user">
           <div class="profile">
@@ -24,7 +21,7 @@
         </div>
         <div class="posts">
           <p>
-            <a href="/posts/<%=post.postid%>"> <%= post.postMessage%> </a>
+             <%= post.postMessage%> 
             <span>
               <% for(let tag of post.tags) {%>
               <a class="tag" href="#"><%= tag %> </a>
@@ -67,7 +64,7 @@
                 name="create-outline"
               ></ion-icon
             ></a>
-            <!-- <a href="#">
+            <a href="#">
               <ion-icon
                 class="function"
                 id="delete"
@@ -80,14 +77,12 @@
                 id="create"
                 name="add-outline"
               ></ion-icon
-            ></a> -->
+            ></a>
           </div>
         </div>
       </div>
-
-      <% } %>
     </div>
-
+</form>
     <!-- scripts for cons -->
     <script
       type="module"
