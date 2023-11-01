@@ -135,7 +135,7 @@
         filter: drop-shadow(0 0 10px crimson);
         cursor: pointer;
       }
-      .functionOption #create:hover,
+      .functionOption #save:hover,#create:hover,
       #edit:hover {
         transform: scale(1.4);
         /* height: 1.4em;
@@ -156,3 +156,132 @@
         filter: drop-shadow(0 0 10px crimson);
         cursor: pointer;
       }
+
+     textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 0;
+        outline: 0;
+        /* background: #141d26; */
+        background: transparent;
+        color:inherit;
+        font-family: inherit;
+          /* text-align: right; */
+        /* font-weight: bold; */
+        /* font-size: 14px; */
+        box-sizing: border-box;
+        overflow: hidden;
+        /* z-index: 1; */
+    }
+    input{
+      background: transparent;
+        color:inherit;
+        font-family: inherit;
+        border: 0;
+        /* outline: 0; */
+    }
+  #save{
+      margin-left: -35px;
+    }
+    #save:hover{
+      rotate: 45deg;
+    }
+
+
+    /* sticky section */
+    
+.live-chat {
+  height: 182px;
+  position: fixed;
+  right: -204px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.5s ease-out;
+}
+.live-chat.open {
+  right: 0;
+}
+.live-chat .trigger {
+  display: inline-block;
+  width: 125px;
+  height: 37px;
+  background-color: #243447; 
+  float: left;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -81px;
+  top: 44px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.live-chat .trigger .trigger-inside {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.live-chat .trigger .trigger-inside span {
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.live-chat .start {
+  display: inline-block;
+  width: 204px;
+  height: 100%;
+  background-color: #243447;
+  float: left;
+  border-bottom-left-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+.live-chat .start p {
+  font-family: "Open Sans";
+  color: inherit;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 154px;
+}
+.live-chat .start a {
+  font-family: "ITC Avant Garde Gothic";
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  width: 154px;
+  text-transform: uppercase;
+}
+.live-chat .start .close {
+  height: 30px;
+  width: 30px;
+  background-color: #4A4A4A;
+  position: absolute;
+  top: -15px;
+  right: 0.5rem;
+  border-radius: 50%;
+}
+.live-chat .trigger:hover,
+.live-chat .start .close:hover,
+.live-chat .start a:hover {
+  cursor: pointer;
+}
+    

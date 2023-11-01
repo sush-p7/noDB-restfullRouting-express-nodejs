@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Post</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+
+  <body>
+    hello user
+    <div class="wrapper">
+      <!-- <form action="https://www.youtube.com/watch?v=IEfBBYmxtIo"></form> -->
+      <form action="/posts" method="POST">
+        <div class="card">
+          <div class="user">
+            <div class="profile">
+              <img src="https://placehold.co/50" alt="avatar" class="ava" />
+              <div class="username">
+                <h3 class="name">
+                  <input type="text" name="postName" placeholder="Name" />
+                </h3>
+                <p class="uname">
+                  <input
+                    type="text"
+                    name="postUsername"
+                    placeholder="Enter username"
+                  />
+                </p>
+              </div>
+            </div>
+            <i class="fa-brands fa-postser icon"></i>
+          </div>
+          <div class="posts">
+            <p>
+              <textarea
+                type="text"
+                name="postMessage"
+                id=""
+                style="font-size: inherit"
+                aria-placeholder="Enter your thoughts..."
+                autofocus
+              >
+              </textarea>
+              <!-- No of tag -->
+              <span> </span>
+            </p>
+          </div>
+          <div class="insight">
+            <!-- likes and created time  -->
+
+            <div class="functionOption">
+              <button
+                type="submit"
+                style="
+                  background: none;
+                  padding: 0px;
+                  border: none;
+                  color: inherit;
+                  margin-left: -10px;
+                "
+              >
+                <ion-icon
+                  style="width: 2em; height: 2em"
+                  name="paper-plane-outline"
+                  id="save"
+                  class="function"
+                ></ion-icon>
+              </button>
+              <!-- <a href="#">
+                <ion-icon
+                  class="function"
+                  id="delete"
+                  name="trash-outline"
+                ></ion-icon>
+              </a>
+              <a href="https://ionic.io/ionicons"
+                ><ion-icon
+                  class="function"
+                  id="create"
+                  name="add-outline"
+                ></ion-icon
+              ></a> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- scripts for cons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

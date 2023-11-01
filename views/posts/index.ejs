@@ -24,12 +24,14 @@
         </div>
         <div class="posts">
           <p>
-            <a href="/posts/<%=post.postid%>"> <%= post.postMessage%> </a>
-            <span>
-              <% for(let tag of post.tags) {%>
-              <a class="tag" href="#"><%= tag %> </a>
-              <% } %>
-            </span>
+            <a href="/posts/<%=post.postid%>">
+              <%= post.postMessage%>
+              <span>
+                <% for(let tag of post.tags) {%>
+                <a class="tag" href="#"><%= tag %> </a>
+                <% } %>
+              </span></a
+            >
           </p>
         </div>
         <div class="insight">
@@ -60,13 +62,6 @@
             <p><%=post.time%> – <%=post.date%></p>
           </div>
           <div class="functionOption">
-            <a href="/posts/<%=post.postid%>/edit">
-              <ion-icon
-                class="function"
-                id="edit"
-                name="create-outline"
-              ></ion-icon
-            ></a>
             <!-- <a href="#">
               <ion-icon
                 class="function"
@@ -86,9 +81,24 @@
       </div>
 
       <% } %>
+      <!-- create new post -->
+    </div>
+    <div class="live-chat">
+      <div class="trigger">
+        <div class="trigger-inside">
+          <span><a href="/posts/new">New Post</a></span>
+        </div>
+      </div>
+      <div class="start">
+        <p>.</p>
+        <!-- <a href="/posts/new"></a> -->
+        <div class="close"></div>
+      </div>
     </div>
 
     <!-- scripts for cons -->
+    <script type="text/javascript" src="/app.js"></script>
+    <!--  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
